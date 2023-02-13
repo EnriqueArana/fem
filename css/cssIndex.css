@@ -6,7 +6,9 @@
     --white: #fff;
 }
 
-*{
+*,
+*::before,
+*::after{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,7 +24,6 @@ body{
 
 .nav{
     border-bottom: 1px solid var(--white);
-    
 }
 
 .nav__toggle{
@@ -109,13 +110,56 @@ body{
     display: none;
 }
 
-/*Esta es la parte siguiente del header-nav*/
+/*Esta es la parte siguiente del main*/
+main{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+}
+
+section{
+    transform-style: preserve-3d;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+section h1{
+    text-align: center;
+    font-family: sans-serif;
+}
+
 .first__section{
     height: 90vh;
     width: 100%;
-    background-image: url(../img/imagenPrinciapl.jpg);
     background-size: cover;
     background-position: center;
+}
+
+.first__section h1{
+    width: 60%;
+    font-size: 4rem;
+}
+
+.first__section::after{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateZ(-1px) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+}
+
+.parallax::after{
+    background-image: url(../img/imagenPrinciapl.jpg);
+    background-size: cover;
 }
 
 @media only screen and (min-width:560px){
