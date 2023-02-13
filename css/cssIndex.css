@@ -10,11 +10,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;;
 }
 
 body{
-    font-family: sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: lighter;
     color: var(--black);
     background-color: var(--primary);
@@ -108,6 +107,15 @@ body{
 
 #nav__checkbox:checked ~ label.nav__toggle .menu{
     display: none;
+}
+
+/*Esta es la parte siguiente del header-nav*/
+.first__section{
+    height: 90vh;
+    width: 100%;
+    background-image: url(../img/imagenPrinciapl.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 @media only screen and (min-width:560px){
