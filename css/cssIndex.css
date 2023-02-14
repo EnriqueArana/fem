@@ -1,25 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 :root{
-    --primary: #fff;
-    --black: black;
-    --white: #fff;
     --padding-container: 100px 0;
 }
-
-*,
-*::before,
-*::after{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    
 
 body{
     font-family: 'Poppins', sans-serif;
-    font-weight: lighter;
-    color: var(--black);
-    background-color: var(--primary);
-    height: 100vh;
+
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
 }
 
 .cabecera{
@@ -30,6 +25,7 @@ body{
     position: relative;
     display: grid;
     grid-template-rows: 100px 1fr;
+    color: #fff;
 }
 
 .cabecera::before{
@@ -46,17 +42,23 @@ body{
 }
 
 .nav{
-    border-bottom: 1px solid var(--white);
     --padding-container: 0;
     height: 100%;
+    display: flex;
+    align-items: center;
 }
 
-
+.nav__logo{
+    padding: 0;
+}
 
 .nav__logo--images{
     height: 80px;
     cursor: pointer;
+    list-style: none;
 }
+
+
 
 .nav__logo--images img{
     height: 100%;
@@ -67,16 +69,47 @@ body{
     transform: scale(1.2);
 }
 
+.nav__title{
+    font-weight: 300;
+}
+
+.nav__link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.nav__items{
+    list-style: none;
+}
+
+.nav__links{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav__menu{
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.nav__img{
+    display: block;
+    width: 30px;
+}
+
+.nav__close{
+    display: var(--show,none);
+}
+
 
 /*Esta es la parte siguiente del main*/
 
-.container{
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-    padding: var(--padding-container);
-}
+
 
 .first__section{
     max-width: 800px;
