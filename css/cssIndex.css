@@ -1,10 +1,9 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 :root{
     --primary: #fff;
     --black: black;
     --white: #fff;
+    --padding-container: 100px 0;
 }
 
 *,
@@ -23,156 +22,70 @@ body{
     height: 100vh;
 }
 
+.cabecera{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+
+.cabecera::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../img/imagenPrincipal.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
+}
+
 .nav{
     border-bottom: 1px solid var(--white);
-}
-
-.nav__toggle{
-    position: absolute;
-    cursor: pointer;
-    margin: 0 1rem;
-    right: 0;
-    
-}
-
-.nav__toggle img{
-    width: 1rem;
-}
-
-.nav__toggle .close{
-    display: none;
-}
-
-.nav__toggle .close,
-.nav__toggle .menu{
-    margin-top: 0.3rem;
-}
-
-.nav__checkbox{
-    display: none;
-}
-
-.nav__menu{
-    display: flex;
-    flex-direction: column;
-    gap: 8rem;
-    align-items: center;
-    margin: 1rem 8rem 1rem 1rem;
-}
-
-.nav__menu li{
-    list-style-type: none;
-    display: none;
-}
-
-.nav__menu li:hover{
-    transform: scale(1.2);
-}
-
-.nav__menu li:first-child{
-    margin-right: auto;
-    display: block;
-}
-.nav__menu a{
-    text-decoration: none;
-    color: inherit;
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
-.nav__menu a:hover{
-    color: #7ed957
+    --padding-container: 0;
+    height: 100%;
 }
 
 
-.menu__logo{
+
+.nav__logo--images{
     height: 80px;
     cursor: pointer;
 }
 
-.menu__logo img{
+.nav__logo--images img{
     height: 100%;
     transition: all 0.3s;
 }
 
-.menu__logo img:hover{
+.nav__logo--images img:hover{
     transform: scale(1.2);
 }
 
-#nav__checkbox:checked ~ ul.nav__menu li{
-    display: block;
-}
-
-#nav__checkbox:checked ~ label.nav__toggle .close{
-    display: block;
-}
-
-#nav__checkbox:checked ~ label.nav__toggle .menu{
-    display: none;
-}
 
 /*Esta es la parte siguiente del main*/
-main{
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    perspective: 2px;
-}
 
-section{
-    transform-style: preserve-3d;
-    position: relative;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-}
-
-section h1{
-    text-align: center;
-    font-family: sans-serif;
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
 }
 
 .first__section{
-    height: 90vh;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
+    max-width: 800px;
+    --padding-container:0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
 }
 
-.first__section h1{
-    width: 60%;
-    font-size: 4rem;
-}
-
-.first__section::after{
-    content: " ";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    transform: translateZ(-1px) scale(1.5);
-    background-size: 100%;
-    z-index: -1;
-}
-
-.parallax::after{
-    background-image: url(../img/imagenPrinciapl.jpg);
-    background-size: cover;
-}
-
-@media only screen and (min-width:560px){
-    .nav__toggle{
-        display:none;
-    }
-
-    .nav__menu{
-        flex-direction: row;
-    }
-
-    .nav__menu li{
-        display: block;
-    }
-}
