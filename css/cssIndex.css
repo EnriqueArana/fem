@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 :root{
     --padding-container: 100px 0;
+    --color-logo: #7ed957;
 }
     
 
@@ -76,6 +77,7 @@ body{
 .nav__link{
     margin-left: auto;
     padding: 0;
+    padding-right: 20px;
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: max-content;
@@ -84,11 +86,21 @@ body{
 
 .nav__items{
     list-style: none;
+    transition: all 0.3s;
+}
+
+.nav__items:hover{
+    transform: scale(1.2);
 }
 
 .nav__links{
     text-decoration: none;
     color: #fff;
+    font-weight: bold;
+}
+
+.nav__links:hover{
+    color: var(--color-logo);
 }
 
 .nav__menu{
@@ -126,6 +138,8 @@ body{
 
 .first__section--paragraph{
     margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .first__section--contactar{
@@ -138,7 +152,6 @@ body{
     padding: 13px 30px;
     border-radius: 32px;
     transition: all 0.3s;
-    
 }
 
 .first__section--contactar:hover{
@@ -200,8 +213,11 @@ body{
 }
 
 .third__section--primero{
-    display: grid;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
 }
 
 .third__section--primero h1{
@@ -210,11 +226,42 @@ body{
 }
 
 .third__section--primero p{
-    text-align: left;
-    padding-left: 180px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.third__section--redes img{
+    width: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.third__section--redes img:hover{
+    transform: scale(1.4);
+    filter: invert(25%) sepia(52%) saturate(490%) hue-rotate(56deg) brightness(100%) contrast(86%);
 }
 
 .third__section--segundo{
-    display: grid;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.third__section--segundo h2{
+    font-size: 30px;
+    margin-top: 20%;
+}
+
+.third__section--segundo img{
+    width: 80px;
+    margin-bottom: 25%;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.third__section--segundo img:hover{
+    transform: scale(1.4);
+    filter: invert(25%) sepia(52%) saturate(490%) hue-rotate(56deg) brightness(100%) contrast(86%);
 }
