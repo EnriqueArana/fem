@@ -164,27 +164,32 @@ body{
     margin: 0;
 }
 
-.second__section--article{
+.second__section--article1{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.second__section--imagen1{
-    width: 100%;
+.second__section--article2{
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+}
 
+.second__section--imagen1{
+    overflow: hidden;
 }
 
 .second__section--imagen2{
-    width: 33%;
+    width: 100%;
     
 }
 .second__section--imagen3{
-    width: 33%;
+    width: 100%;
     
 }
 .second__section--imagen4{
-    width: 34%;
+    width: 100%;
 }
 
 .third__section{
