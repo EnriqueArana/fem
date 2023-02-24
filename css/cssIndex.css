@@ -401,6 +401,7 @@ body{
     z-index: 2;
 }
 
+
 .first__sectionC{
     text-align: center;
     justify-content: center;
@@ -424,7 +425,20 @@ body{
 
 .seccion__video{
     background-color: #000;
+}
 
+.cuerpo__canciones{
+    margin-top: 300px;
+}
+
+.seccion__canciones{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    height: 50vh;
+    align-items: center;
 }
 
 video{
@@ -435,6 +449,46 @@ video{
     height: 50%;
     object-fit: cover;
 }
+.seccion__canciones--video{
+    width: 50%;
+}
+.seccion__canciones--video video{
+    width: 100%;
+    position: relative;
+    padding: 20px;
+}
+
+.footer__canciones{
+    height: 100%;
+    background-color: #e7d7c9;
+    position: relative;
+    margin-top: 290px;
+}
+
+.redes__canciones{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.redes__canciones img{
+    width: 40px;
+    cursor: pointer;
+}
+
+.redes__canciones img:hover{
+    transform: scale(1.4);
+    filter: invert(55%) sepia(98%) saturate(2776%) hue-rotate(211deg) brightness(92%) contrast(101%);
+}
+
+.footer__canciones p{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
 
 @media (max-width:1049px){
     .nav__menu{
@@ -479,6 +533,11 @@ video{
     /*NOSOTROS*/
     .seccion__integrantes p{
         font-size: 10px;
+    }
+
+    /* CANCIONES */
+    .seccion__canciones{
+        margin-top: 20px;
     }
 }
 @media (max-width:980px){
@@ -535,6 +594,25 @@ video{
         padding: 0 70px 0 70px;
         font-size: 22px;
     }
+
+    /* CANCIONES */
+    .capa__video{
+        height: 40%;
+    }
+
+    video{
+        height: 40%;
+    }
+
+    .first__section--titleC{
+        font-size: 60px;
+        margin-top: 150px;
+    }
+
+    .seccion__canciones{
+        margin-top: 60px;
+        padding-top: 50px;
+    }
 }
 
 @media (max-width:641px){
@@ -581,5 +659,15 @@ video{
 
     .seccion__integrantes img{
         padding: 25px 50px 0 50px;
+    }
+
+    /* CANCIONES */
+    .footer__canciones{
+        margin-top: 200px;
+    }
+
+    .seccion__canciones{
+        margin-top: 30px;
+        padding-top: 30px;
     }
 }

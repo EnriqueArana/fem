@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Canciones</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="device initialscale=1">
         <link rel="shortcut icon" href="img/logoFavicon.png" type="image/x-icon">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/cssIndex.css">
@@ -50,20 +50,48 @@
                     <img src="img/menuHamburger.svg" class="nav__img" alt="Menu modo Phone">
                 </div>
             </nav>
-            <section class="first__sectionC container">
+            <section class="first__sectionC ">
                 <h1 class="first__section--titleC">ESCÚCHANOS</h1>
             </section>
 
         </header>
-        <section class="seccion__video">
-            <video muted autoplay loop>
-                <source src="fondoVideo.mp4" type="video/mp4">
-            </video>
-            <div class="capa__video">
-
+            <section class="seccion__video">
+                <video muted autoplay loop>
+                    <source src="fondoVideo.mp4" type="video/mp4">
+                </video>
+                <div class="capa__video">
+                </div>
+            </section>
+            <main class="cuerpo__canciones">
+                <section class="seccion__canciones">
+                    <article class="seccion__canciones--video">
+                        <video controls><source src="fondoVideo.mp4" type="video/mp4"></video>
+                    </article>
+                    <article class="seccion__canciones--video">
+                        <video controls><source src="fondoVideo.mp4"></video>
+                    </article>
+                    <article class="seccion__canciones--video">
+                        <video controls><source src="fondoVideo.mp4"></video>
+                    </article>
+                    <article class="seccion__canciones--video">
+                        <video controls><source src="fondoVideo.mp4"></video>
+                    </article>
+                    <article class="seccion__canciones--video">
+                        <video controls><source src="fondoVideo.mp4"></video>
+                    </article>
+                    <article class="seccion__canciones--video">
+                        <video controls><source src="fondoVideo.mp4"></video>
+                    </article>
+                </section>
+            </main>
+        <footer class="footer__canciones">
+            <div class="redes__canciones">
+                <img src="img/facebook.svg" alt="Facebook">
+                <img src="img/youtube.svg" alt="Youtube">
+                <img src="img/instagram.svg" alt="Instagram">
             </div>
-        </section>
-
+            <p>&COPY;Copyright 2023 FEM</p>
+        </footer>
         
         <script src="js/menu.js" async defer></script>
     </body>
