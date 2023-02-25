@@ -488,6 +488,64 @@ video{
     margin-bottom: 20px;
 }
 
+/* CONTACTO */
+.cabeceraCont{
+    width: 100%;
+    height: 100vh;
+    min-height: 100px;
+    max-height: 300px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    margin-bottom: 20px;
+}
+
+.cabeceraCont::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e7d7c9;
+    background-size: cover;
+    z-index: -1;
+}
+.first__sectionCont{
+    width: 100%;
+}
+
+.first__section--titleCont{
+    font-size: 4em;
+    text-align: center;
+}
+
+.cuerpo__reservacion{
+    display: flex;
+    flex-direction: column;
+}
+
+.cuerpo__reservacion--mapa{
+    width: 100%;
+}
+
+.cuerpo__reservacion--detalle{
+    display: grid;
+}
+
+.cuerpo__reservacion--detalle h2{
+    font-size: 3em;
+    text-align: center;
+}
+
+.cuerpo__reservacion--detalle article{
+
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+}
 
 @media (max-width:1049px){
     .nav__menu{
