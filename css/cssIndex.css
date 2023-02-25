@@ -437,7 +437,7 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     position: relative;
-    height: 50vh;
+    height: 70vh;
     align-items: center;
 }
 
@@ -462,7 +462,6 @@ video{
     height: 100%;
     background-color: #e7d7c9;
     position: relative;
-    margin-top: 290px;
 }
 
 .redes__canciones{
@@ -662,9 +661,6 @@ video{
     }
 
     /* CANCIONES */
-    .footer__canciones{
-        margin-top: 200px;
-    }
 
     .seccion__canciones{
         margin-top: 30px;
