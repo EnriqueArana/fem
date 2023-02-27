@@ -533,18 +533,62 @@ video{
 }
 
 .cuerpo__reservacion--detalle{
-    display: grid;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    overflow: hidden;
+    justify-content: space-evenly;
 }
 
 .cuerpo__reservacion--detalle h2{
     font-size: 3em;
     text-align: center;
+    width: 100%;
+    padding: 40px;
 }
 
-.cuerpo__reservacion--detalle article{
-
+.cuerpo__reservacion--mensaje{
     overflow: hidden;
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    width: 50%;
+    padding: 20px 35px 20px 35px;
+}
+
+.cuerpo__reservacion--mensaje h3{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.cuerpo__reservacion--mensaje p{
+    text-align: center;
+    font-size: 10px;
+    padding: 10px 90px 0 90px;
+}
+
+.cuerpo__reservacion--ubicacion{
+    width: 25%;
+    padding: 20px 30px 20px 30px;
+    border: 5px solid #c49a4b;
+}
+
+.cuerpo__reservacion--ubicacion h3{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+.cuerpo__reservacion--ubicacion p{
+    text-align: center;
+    padding: 10px 50px 10px 50px;
+    font-size: 16px;
+}
+
+.cuerpo__reservacion--parrafo1{
+    padding-bottom: 20px;
+}
+
+.cuerpo__reservacion--parrafo2{
+    padding-top: 20px;
 }
 
 @media (max-width:1049px){
