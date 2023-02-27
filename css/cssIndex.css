@@ -826,10 +826,13 @@ video{
     }
 
     .footer__canciones{
-        margin-top: 250px;
+        margin-top: 100px;
     }
 
     /* CONTACTO */
+    .first__section--titleCont{
+        font-size: 50px;
+    }
     .cuerpo__reservacion--detalle h2{
         font-size: 40px;
     }
