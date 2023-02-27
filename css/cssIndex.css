@@ -396,7 +396,7 @@ body{
 
 /* CANCIONES */
 .cabeceraC{
-    max-height: 600px;
+    max-height: 0px;
     position: relative;
     z-index: 2;
 }
@@ -814,6 +814,19 @@ video{
     .seccion__canciones{
         margin-top: 30px;
         padding-top: 30px;
+    }
+
+    .first__section--titleC{
+        font-size: 40px ;
+        margin-top: 20px;
+    }
+
+    .cuerpo__canciones{
+        margin-top: 200px;
+    }
+
+    .footer__canciones{
+        margin-top: 250px;
     }
 
     /* CONTACTO */
